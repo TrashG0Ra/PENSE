@@ -592,7 +592,7 @@ body {
   }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 650px) {
   .header__list,
   .footer__bottom {
     flex-direction: column;
