@@ -20,6 +20,10 @@ body {
 
 /* Recurring */
 
+button {
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
 .btn-noneBg {
   border: 1px solid #ff7235;
   border-radius: 8px;
@@ -238,6 +242,8 @@ body {
 .header__link {
   text-decoration: none;
   color: #292830;
+  transition: 0.5s;
+  border-bottom: 1px solid transparent;
 }
 
 .header__link:hover {
@@ -565,6 +571,7 @@ body {
   font-size: 18px;
   line-height: 29px;
   color: #292830;
+  transition: 0.3s;
 }
 
 .footer__newsletter__subtitle {
@@ -581,6 +588,7 @@ body {
 }
 
 .footer__newsletter__input {
+  width: 100%;
   font-size: 18px;
   line-height: 29px;
   color: #292830;
@@ -642,6 +650,14 @@ body {
 .footer__socials-link {
   margin: 8px;
   text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer__links-link:hover,
+.footer__legal-link:hover,
+.footer__socials-link:hover {
+  opacity: 0.6;
+  transition: 0.3s;
 }
 
 /* Adaptive */
@@ -649,6 +665,10 @@ body {
 @media (max-width: 1170px) {
   .container {
     padding: 0 15px;
+  }
+
+  .title {
+    max-width: 600px;
   }
 
   .header__logo {
@@ -667,6 +687,14 @@ body {
   .features3__inner,
   .product-features__top-text {
     flex-direction: column;
+  }
+
+  .section-left {
+    margin-right: 0;
+  }
+
+  .subtitle {
+    text-align: center;
   }
 
   .section__img {
