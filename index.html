@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>PENSE</title>
+    <!-- Начало favicon -->
+    <!-- Конец favicon -->
+    <meta name="description" content="aaa" />
+    <meta name="keywords" content="aaa" />
+    <meta name="author" content="Gor4ik" />
+    <meta name="robots" content="index, follow" />
+    <!-- <link rel="canonical" href="" /> -->
+    <!-- <link rel="alternate" hreflang="ru" href="" /> -->
   </head>
   <body>
     <header class="header">
@@ -20,10 +28,10 @@
             <span class="header__logo-text logo__text">pense</span>
           </a>
           <nav class="header__hamburger">
-            <input id="header__hamburger-toggle" type="checkbox" />
             <label class="header__hamburger-btn" for="header__hamburger-toggle">
               <span></span>
             </label>
+            <input id="header__hamburger-toggle" type="checkbox" />
             <ul class="header__list">
               <li class="header__item">
                 <a href="#" class="header__link">Features</a>
@@ -65,37 +73,55 @@
     <section class="product">
       <div class="container">
         <div class="product__inner">
-          <img src="imgs/product.png" alt="product" class="product__img" />
+          <picture>
+            <source srcset="imgs/product.webp" type="image/webp" />
+            <img src="imgs/product.png" alt="product" class="product__img" />
+          </picture>
         </div>
       </div>
       <div class="product__brands">
         <div class="container">
           <div class="brands__inner">
-            <img
-              src="imgs/product_facebook.png"
-              class="product__brand-el"
-              alt="facebook"
-            />
-            <img
-              src="imgs/product_google.png"
-              class="product__brand-el"
-              alt="google"
-            />
-            <img
-              src="imgs/product_cocacola.png"
-              class="product__brand-el"
-              alt="cocacola"
-            />
-            <img
-              src="imgs/product_linkedin.png"
-              class="product__brand-el"
-              alt="linkedin"
-            />
-            <img
-              src="imgs/product_samsung.png"
-              class="product__brand-el"
-              alt="samsung"
-            />
+            <picture>
+              <source srcset="imgs/product_facebook.webp" type="image/webp" />
+              <img
+                src="imgs/product_facebook.png"
+                class="product__brand-el"
+                alt="facebook"
+              />
+            </picture>
+            <picture>
+              <source srcset="imgs/product_google.webp" type="image/webp" />
+              <img
+                src="imgs/product_google.png"
+                class="product__brand-el"
+                alt="google"
+              />
+            </picture>
+            <picture>
+              <source srcset="imgs/product_cocacola.webp" type="image/webp" />
+              <img
+                src="imgs/product_cocacola.png"
+                class="product__brand-el"
+                alt="cocacola"
+              />
+            </picture>
+            <picture>
+              <source srcset="imgs/product_linkedin.webp" type="image/webp" />
+              <img
+                src="imgs/product_linkedin.png"
+                class="product__brand-el"
+                alt="linkedin"
+              />
+            </picture>
+            <picture>
+              <source srcset="imgs/product_samsung.webp" type="image/webp" />
+              <img
+                src="imgs/product_samsung.png"
+                class="product__brand-el"
+                alt="samsung"
+              />
+            </picture>
           </div>
         </div>
       </div>
@@ -187,7 +213,7 @@
               <div
                 class="product-features__svg product-features__svg-orange"
               ></div>
-              <h4 class="product-features__card-title">Cross platform</h4>
+              <h3 class="product-features__card-title">Cross platform</h3>
               <p class="product-features__card-subtitle">
                 Elit esse cillum dolore eu fugiat nulla pariatur
               </p>
@@ -195,7 +221,7 @@
             </div>
             <div class="product-features__card">
               <div class="product-features__svg pi"></div>
-              <h4 class="product-features__card-title">Cloud server</h4>
+              <h3 class="product-features__card-title">Cloud server</h3>
               <p class="product-features__card-subtitle">
                 Elit esse cillum dolore eu fugiat nulla pariatur
               </p>
@@ -203,7 +229,7 @@
             </div>
             <div class="product-features__card">
               <div class="product-features__svg bl"></div>
-              <h4 class="product-features__card-title">Pure Javascript</h4>
+              <h3 class="product-features__card-title">Pure Javascript</h3>
               <p class="product-features__card-subtitle">
                 Elit esse cillum dolore eu fugiat nulla pariatur
               </p>
@@ -246,7 +272,7 @@
               <small class="plans__card-small"
                 >up to 3 user + 1.99 per user</small
               >
-              <div class="plans__btn">
+              <button class="plans__btn">
                 <span>Get this</span>
                 <svg
                   class="plans__cards-arrow"
@@ -261,9 +287,8 @@
                     fill="#FF7235"
                   />
                 </svg>
-              </div>
+              </button>
             </div>
-
             <div class="plans__card">
               <img
                 class="plans__card-img"
@@ -291,7 +316,7 @@
               <small class="plans__card-small"
                 >up to 3 user + 1.99 per user</small
               >
-              <div class="plans__btn">
+              <button class="plans__btn">
                 <span>Get this</span>
                 <svg
                   class="plans__cards-arrow"
@@ -306,7 +331,7 @@
                     fill="#FF7235"
                   />
                 </svg>
-              </div>
+              </button>
             </div>
 
             <div class="plans__card">
@@ -336,7 +361,7 @@
               <small class="plans__card-small"
                 >up to 3 user + 1.99 per user</small
               >
-              <div class="plans__btn">
+              <button class="plans__btn">
                 <span>Get this</span>
                 <svg
                   class="plans__cards-arrow"
@@ -351,7 +376,7 @@
                     fill="#FF7235"
                   />
                 </svg>
-              </div>
+              </button>
             </div>
           </div>
         </div>
@@ -415,12 +440,16 @@
               <p class="footer__newsletter__subtitle">
                 Over 25000 people have subscribed
               </p>
-              <input
-                type="text"
-                class="footer__newsletter__input"
-                placeholder="Enter your email"
-              />
-              <button class="footer__newsletter__btn">Subscribe</button>
+              <label class="footer__label-input" for="footer__input">
+                <input
+                  id="footer__input"
+                  name="footer__input"
+                  type="text"
+                  class="footer__newsletter__input"
+                  placeholder="Enter your email"
+                />
+                <button class="footer__newsletter__btn">Subscribe</button>
+              </label>
               <small class="footer__newsletter__small"
                 >We don’t sell your email and spam</small
               >
@@ -458,5 +487,6 @@
         </div>
       </div>
     </footer>
+    <script src="./modernizr-custom.js"></script>
   </body>
 </html>

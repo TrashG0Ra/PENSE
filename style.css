@@ -231,9 +231,16 @@ body {
 .product {
   margin-bottom: 142px;
   padding-top: 87px;
+}
+.webp .product {
+  background: url('imgs/productBg1.webp') no-repeat right top,
+    url('imgs/productBg2.webp') no-repeat left bottom, #ff7235;
+}
+.no-webp .product {
   background: url('imgs/productBg1.png') no-repeat right top,
     url('imgs/productBg2.png') no-repeat left bottom, #ff7235;
 }
+
 .product__img {
   display: block;
   padding: 0 15px;
@@ -412,6 +419,8 @@ body {
   margin-bottom: 40px;
 }
 .plans__btn {
+  display: flex;
+  align-items: center;
   font-size: 16px;
   padding: 12px 28px 12px 24px;
   border: 1px solid #ff7235;
@@ -432,7 +441,7 @@ body {
   transition: 0.5s;
 }
 .plans__cards-arrow {
-  margin-left: 14px;
+  margin-left: 7px;
 }
 
 /* Footer */
@@ -484,11 +493,15 @@ body {
   color: #bdbdbd;
   margin-bottom: 18px;
 }
+.footer__label-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
 .footer__newsletter__input {
   font-size: 18px;
   line-height: 29px;
   color: #292830;
-  margin-bottom: 10px;
   border: 1px solid #292830;
   border-radius: 8px;
   padding: 17px 125px 17px 23px;
@@ -498,7 +511,9 @@ body {
 .footer__newsletter__btn {
   font-weight: 600;
   font-size: 16px;
-  margin-left: -115px;
+  position: absolute;
+  right: 0;
+  right: 5px;
   background: #ff7235;
   border-radius: 8px;
   padding: 14px 16px;
@@ -507,6 +522,7 @@ body {
   color: #ffffff;
 }
 .footer__newsletter__small {
+  margin-top: 10px;
   font-size: 14px;
   line-height: 23px;
   color: #bdbdbd;
@@ -597,6 +613,12 @@ body {
   .footer__bottom {
     flex-direction: column;
   }
+  .header__list {
+    max-height: 0px;
+  }
+  #header__hamburger-toggle:checked ~ .header__list {
+    max-height: none;
+  }
   .header__hamburger-btn {
     display: block;
   }
@@ -608,7 +630,8 @@ body {
     margin-bottom: 5px;
   }
   .title {
-    font-size: 70px;
+    font-size: 50px;
+    text-align: center;
   }
   .header .btn-noneBg,
   .intro__span,
